@@ -1,0 +1,283 @@
+.unique-section{
+    height:300vh;
+}
+
+.go-back-box{
+    position: fixed;
+    left: 30px;
+    top: 20px;
+    width: 45px;
+    height: 45px;
+    background-color: #ff5400;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    z-index: 12;
+}
+
+.go-back-box:hover{
+    background-color: #fd7029;
+}
+
+.unique-main-section{
+    position: relative;
+    max-width: 1920px;
+    width: 100%;
+    height: 250px;
+    margin: auto;
+}
+
+.unique-main-section:after{
+    content: "";
+    clip-path: polygon(0 100%,100% 100%,0 0);
+    background: #272727;
+    height: 60px;
+    max-width: 1920px;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+}
+
+.unique-bg-image{
+    width: 100%;
+    height: 100%;
+    object-fit: inherit;
+}
+
+
+.game-info-wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    padding-top: 150px;
+}
+
+/* game-description-styles */
+
+
+.game-description{
+    width: 350px;
+    height: auto;
+}
+
+.game-thumbnail{
+    width: 100%;
+    height: 300px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+
+.game-description p{
+    font-size: 30px;
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.description-span{
+    color: #909090;
+    line-height: 25px;
+    font-size: 18px;
+}
+
+
+.show-more-btn{
+    background-color: transparent;
+    color: #909090;
+    border: none;
+    font-size: 15px;
+    text-decoration: underline;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.show-more-btn:hover{
+    color: #fff;
+}
+
+
+/* game-requirements-styles */
+
+
+.top{
+    width: 350px;
+    height: 300px;
+    margin-top: 70px;
+}
+
+.game-info-title{
+    font-size: 25px;
+    color: white;
+}
+
+
+.game-info-ul{
+    margin-top: 20px;
+}
+
+.game-info-ul{
+    margin-top: 25px;
+}
+
+.game-info-ul li{
+    position: relative;
+    color: #909090;
+    font-size: 18px;
+    margin-top: 18px;
+}
+
+.game-info-ul li span{
+    position: absolute;
+    left: 120px;
+}
+
+/* bottom-styles */
+
+.bottom{
+    width: 350px;
+    margin-top: 40px;
+}
+
+
+.minimum-title{
+    font-size: 25px;
+    color: #fff;
+}
+
+.requirements-ul{
+    margin-top: 20px;
+}
+
+.requirements-ul li{
+    position: relative;
+    color: #909090;
+    font-size: 18px;
+    margin-top: 18px;
+}
+
+
+.requirements-ul li span{
+    position: absolute;
+    left: 120px;
+}
+
+
+
+
+
+.download-game-container{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.download-game-btn{
+    background-color: #ff5400;
+    width: 180px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 15px;
+    color: #fff;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+
+.download-game-btn:hover{
+    background-color: #ff5500cd;
+}
+
+
+
+
+
+
+@media screen and (min-width:550px){
+    .game-description{
+        width: 500px;
+        height: 100%;
+    }
+
+    .top{
+        width: 500px;
+    }
+    
+    .bottom{
+        width: 500px;
+    }
+}
+
+
+@media screen and (min-width:685px){
+    .unique-section{
+        height:260vh;
+    }
+}
+
+
+
+@media screen and (min-width:750px){
+    .unique-main-section{
+        height: 450px;
+    }
+
+    .game-info-title{
+        font-size: 30px;
+    }
+
+    .minimum-title{
+        font-size: 30px;
+    }
+
+
+}
+
+@media screen and (min-width:1050px){
+
+    .game-requirements{
+        position: absolute;
+        right: 0px;
+        top: 150px;
+    }
+
+    .unique-main-section{
+        height: 750px;
+    }
+
+    .game-info-wrapper{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-self: flex-start;
+    }
+
+    .top{
+        margin-top: 0px;
+    }
+
+    .bottom{
+        margin-top: 40px;
+    }
+
+    .download-game-btn{
+        width: 250px;
+        height: 60px;
+        font-size: 20px;
+    }
+
+}
+
+
+@media screen and (min-width:1250px){
+    .unique-section{
+        height:280vh;
+    }
+}

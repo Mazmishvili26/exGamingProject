@@ -1,0 +1,351 @@
+.auth-section{
+    max-width: 1920px;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+}
+
+.auth-wrapper{
+    display: flex;
+}
+
+/* left-auth-styles */
+
+.left-auth{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #323232;
+}
+
+
+.login-container{
+    max-width: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login-title{
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+
+.login-input-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-input{
+    width: 350px;
+    height: 58px;
+    background-color: rgba(16,16,16,.4);
+    box-shadow: inset 0 0 0 2px #3d3d3d;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 8px;
+    border: none;
+    padding: 15px;
+    margin-top: 10px;
+    outline: none;
+}
+
+.submit-btn{
+    border-radius: 8px;
+    width: 350px;
+    height: 58px;
+    background-color:#ff5400 ;
+    height: 56px;
+    padding: 0 30px;
+    border:none;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition-duration: 0.2s;
+}
+
+.submit-btn:hover{
+    background-color: #ffa700;
+}
+
+
+.create-new{
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 8px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition-duration: 0.2s;
+    letter-spacing: 1px;
+}
+
+.create-new:hover{
+    opacity: 1;
+}
+
+
+
+.right-auth{
+    display: none;
+}
+
+
+.login-section{
+    width: 100%;
+    height: 100vh;
+}
+
+/* registration-styles */
+
+.registration-section{
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+.registration-container{
+    max-width: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.close-auth-icon{
+    position: absolute;
+    z-index: 9999;
+    width: 38px;
+    height: 38px;
+    color: red;
+    top: 15px;
+    right: 10px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.close-auth-icon:hover{
+    color: #fff;
+}
+
+.auth-error{
+    color: rgb(237, 18, 18);
+    margin-top: 7px;
+    font-size: 15px;
+}
+
+/* firebase-modal-error-styles */
+
+.firebase-modal-error-bg{
+    position: fixed;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.firebase-modal-error{
+    width: 280px;
+    height: 100px;
+    background-color: #ff5500a5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 16px;
+    padding: 15px;
+}
+
+
+
+.firebase-error{
+    color: white;
+    font-size: 17px;
+}
+
+.firebase-alert{
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+
+.firebase-close-box{
+    position: absolute;
+    right: 7px;
+    top: 5px;
+}
+
+.firebase-close-icon{
+    font-weight: bold;
+    cursor: pointer;
+    color: #ffa700;
+}
+
+
+/* success-register-box-styles */
+
+.success-register-box{
+    width: 100%;
+    height: 100%;
+    background-image: url('../../assets/gaming.jpg');
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+}
+
+
+.success-alert{
+    width: 350px;
+    height: 350px;
+    background-color: #fff; 
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    
+}
+
+.success-desc{
+    width: 120px;
+    height: 120px;
+    background-color: #C1E1C1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.success-icon{
+    width: 80px;
+    height: 80px;
+    color: green;
+}
+
+
+.success-title{
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    color: #2E8B57		;
+}
+
+.success-msg{
+    text-align: center;
+    font-size: 18px;
+}
+
+.back-to-home{
+    text-decoration: underline;
+    color: blue;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width:650px){
+
+    .success-alert{
+        width: 400px;
+        height: 400px;
+    }
+
+    .success-desc{
+        width: 150px;
+        height: 150px;
+    }
+    
+    
+    .success-icon{
+        width: 100px;
+        height: 100px;
+    }
+
+
+}
+
+@media screen and (min-width:1100px){
+
+    .firebase-modal-error{
+        left: 25%;
+    }
+
+    .close-auth-icon{
+        right: -99%;
+    }
+    
+    .left-auth{
+        width: 50%;
+    }
+
+
+    .login-container{
+        max-width: 450px;
+    }
+    
+
+    .registration-container{
+        max-width: 450px;
+    }
+
+    .auth-input{
+        width: 430px;
+    }
+
+    .submit-btn{
+        width: 430px;
+    }
+
+    /* right-auth-styles */
+
+    
+    .right-auth{
+        display: block;
+    }
+
+    .right-auth{
+        position: relative;
+        width: 50%;
+        height: 100vh;
+        background-color: burlywood;
+    }
+
+
+    .right-auth img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+}

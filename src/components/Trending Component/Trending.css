@@ -1,0 +1,263 @@
+.trending-section{
+    height: auto;
+    background-color: #272727;
+}
+
+.trending-content{
+    max-width: 1250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* trending-header-styles */
+
+.trending-header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    width: 365px;
+    margin: 20px auto;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.trending-header-title{
+    font-size: 15px;
+    color: #FFFFFF;
+    margin-left: 15px;
+}
+
+
+.view-all-btn{
+    background-color: transparent;
+    border: none;
+    color:#ff5400;
+    font-size: 13px;
+    margin-right: 15px;
+}
+
+
+/* trending-card-styles */
+
+.trending-card-wrapper{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-right:15px;
+}
+
+.trending-card{
+    width: 282px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.trending-card img{
+    transition-duration: 0.2s;
+}
+
+.trending-card img:hover{
+    transform: scale(1.1);
+}
+
+
+.trending-card-desc{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.trending-card-title{
+    color: #909090;
+    font-size: 13px;
+}
+
+.trending-card-genre{
+    color: white;
+    font-size: 15px;
+}
+
+.trending-card img{
+    width: 282px;
+    border-radius: 10px;
+}
+
+/* trust-panel-container-styles */
+
+.trust-panel-container{
+    max-width: 1920px;
+    width: 100%;
+    height: 150px;
+    background-color: #101010;
+    margin: auto;
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.content{
+    display: flex;
+    max-width: 1250px;
+    width: 100%;
+    /* justify-content: space-between; */
+}
+
+
+/* first-panel-styles */
+
+.trust-panel-box{
+    display: flex;
+    align-items: center;
+}
+
+.tunel-panel-desc{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.tunel-panel-desc h2{
+    font-size: 23px;
+    color: white;
+}
+
+.tunel-panel-desc p{
+    color: #909090;
+    font-size: 15px;
+    margin-top: 6px;
+}
+
+.trust-panel-box::after{
+    content: '';
+    width: 1px;
+    height: 90px;
+    background-color: #323232;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+
+/* panel-display none/block-styles */
+
+.first-panel{
+    display: none;
+}
+
+.second-panel{
+    display: none;
+}
+
+.third-panel{
+    display: none;
+} 
+
+.fourth-panel{
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+
+@media screen and (min-width:800px){
+
+    .content{
+        justify-content: space-evenly;
+    }
+
+    .first-panel{
+        display: block;
+    }
+
+    .fourth-panel{
+        margin: initial;
+    }
+
+}
+
+
+@media screen and (min-width:950px){
+    .second-panel{
+        display: block;
+    }
+}
+
+
+@media screen and (min-width:1280px){
+
+    .content{
+        justify-content: space-between;
+    }
+
+    .third-panel{
+        display: block;
+    }
+
+    .trending-card{
+        width: 380px;
+        margin-left: 0px;
+        margin-top: 30px;
+        overflow: hidden;
+        background-color: reds;
+    }
+
+    .trending-card img{
+        width: 100%;
+    }
+
+
+    .trending-card-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        overflow-x: hidden;
+        margin-top: -20px;
+        padding-right:0px;
+        height: 850px;
+    }
+
+    .trending-header-title{
+        font-size: 27px;
+        color: #FFFFFF;
+        margin-left: 0px;
+    }
+
+    .view-all-btn{
+        background-color: #3D3D3D;
+        padding: 0 15px;
+        height: 40px;
+        font-size: 15px;
+        border-radius: 35px;
+        color: white;
+        transition-duration: 0.2s;
+        margin-right: 0px;
+    }
+
+    .view-all-btn:hover{
+        background-color: #ff5400;
+        cursor: pointer;
+    }
+
+    /* trending-card-desc-styles */
+
+    .trending-card-desc{
+        display: flex;
+        align-items: center;
+    }
+
+    .trending-card-title{
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+
+    .trending-card-genre{
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+
+
+}

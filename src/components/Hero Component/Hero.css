@@ -1,0 +1,34 @@
+.hero-section{
+    padding-top: 80px;
+}
+
+.hero-container{
+    position: relative;
+    background-image: url('../../assets/mainIMG.jpg');
+    height: 250px;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+}
+
+
+.hero-container:after{
+    content: "";
+    clip-path: polygon(0 100%,100% 100%,0 0);
+    background: #272727;
+    height: 60px;
+    max-width: 1920px;
+    width: 100%;
+    position: absolute;
+    bottom: -1px;
+}
+
+
+@media screen and (min-width: 800px){
+    .hero-container{
+        height: 600px;
+    }
+
+}
